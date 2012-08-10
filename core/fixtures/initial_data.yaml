@@ -1,0 +1,29 @@
+-   fields:
+        date_joined: 2012-07-12 14:20:42+00:00
+        email: nickaigi@gmail.com
+        first_name: ''
+        groups: []
+        is_active: true
+        is_staff: true
+        is_superuser: true
+        last_login: 2012-07-12 14:25:30+00:00
+        last_name: ''
+        password: pbkdf2_sha256$10000$hSlGfhhdvoMd$StBpykyKgHz0ZHpeaGbI2M2k92xFDI/S8nBEIJkyFQ0=
+        user_permissions: []
+        username: admin
+    model: auth.user
+    pk: 1
+-   fields: {is_active: true, last_edited: !!timestamp '2012-07-12 14:29:28+00:00',
+        slug: garden-estate-goes-up-in-smoke, story: 'Garden Estate, King''ong''o
+            was yesterday the scene of roaring roaring fires.', timestamp: !!timestamp '2012-07-12
+            14:29:10+00:00', title: Garden Estate goes up in smoke, user: 1}
+    model: core.news
+    pk: 1
+-   fields: {last_edited: !!timestamp '2012-07-12 14:29:12+00:00', news: 1, timestamp: !!timestamp '2012-07-12
+            14:28:28+00:00', title: Fire, user: 1}
+    model: core.tag
+    pk: 1
+-   fields: {last_edited: !!timestamp '2012-07-12 14:29:12+00:00', news: 1, timestamp: !!timestamp '2012-07-12
+            14:28:44+00:00', title: King'ong'o, user: 1}
+    model: core.tag
+    pk: 2
