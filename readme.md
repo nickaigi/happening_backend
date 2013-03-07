@@ -1,1 +1,1 @@
-Backend code for its_happening
+Its Happening app
