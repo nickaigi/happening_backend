@@ -1,0 +1,5 @@
+## sublime files
+*.sublime*
+## compiled python files
+*.pyc
+
