@@ -1,1 +1,6 @@
 {% extends "base.html" %}
+{% block page-content %}
+    {% for n_item in news %}
+        {{ n_item.title }}
+    {% endfor %}
+{% endblock %}
