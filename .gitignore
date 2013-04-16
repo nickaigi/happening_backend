@@ -1,5 +1,11 @@
-## sublime files
+# sublime files
 *.sublime*
-## compiled python files
+# compiled python files
 *.pyc
+# vim temp files
+*.swp
+# python temp files
+*.py~
+# gitignore temp file
+*.gitignore~
 
