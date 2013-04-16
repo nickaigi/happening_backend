@@ -8,4 +8,6 @@
 *.py~
 # gitignore temp file
 *.gitignore~
+# html temp files
+*.html~
 
