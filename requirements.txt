@@ -8,4 +8,3 @@ selenium
 python-dateutil==1.5
 wsgiref==0.1.2
 mock
-MySQL-python
