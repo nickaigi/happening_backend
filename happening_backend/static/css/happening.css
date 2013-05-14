@@ -1,0 +1,7 @@
+/* bootstrap overiden classes*/
+body{
+    background-image: url('../img/cream_pixels.png');
+    background-repeat: reapeat-y;
+}
+/*end bootstrap overiden classes*/
+
