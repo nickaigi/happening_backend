@@ -1,16 +1,35 @@
 {% extends "base.html" %}
+
+{% block title %} {{news.title}} - Happening {% endblock %}
+
 {% block css %}
 {% endblock%}
 
 {% block javascript %}
+
+$(document).ready(function(){
+     console.log("{{ request.get_full_path }}");
+});
 {% endblock %}
 
 {% block page-content %}
  
-<div>
-    <h2>{{news.title}}</h2>
+<div class="span7 offset2 news_stream">
     <div>
+        <div class="pull-left">
+            <h2>{{news.title}}</h2>
+        </div>
+        <div class="pull-right">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ request.get_full_path }}" data-via="nickaigi">
+                Tweet
+            </a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+            </script>
+        </div>
+    </div>
+    <div class="span5">
         {{news.story}}
     </div>
 </div>
+
 {% endblock %}

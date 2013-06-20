@@ -18,3 +18,17 @@ def news_view(request,news_id):
     news = News.objects.get(id=news_id)
     return render_to_response('news.html',{'news': news
         }, context_instance=RequestContext(request))
+
+
+def about(request):
+    """
+    Happening about page
+    """
+    pass
+
+
+def contact(request):
+    """
+    Happening contact page
+    """
+    pass
