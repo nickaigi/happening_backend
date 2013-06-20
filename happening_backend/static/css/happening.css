@@ -1,7 +1,33 @@
 /* bootstrap overiden classes*/
-body{
-    background-image: url('../img/cream_pixels.png');
-    background-repeat: reapeat-y;
+.body{
+    //background-image: url('../img/cream_pixels.png');
 }
 /*end bootstrap overiden classes*/
+
+.news_stream{
+    background-image: url('../img/cream_pixels.png');
+}
+
+.news_item{
+    background: #efefef;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px;
+}
+
+.news_title{
+    color: #317eac;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.news_tag{
+    padding: 3px;
+}
+
+.news_intro_text{
+    margin:10px;
+}
 

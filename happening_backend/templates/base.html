@@ -9,6 +9,7 @@
 
     <!-- Le styles -->
     <link href="{{STATIC_URL}}css/bootstrap.css" rel="stylesheet">
+    <link href="{{STATIC_URL}}css/happening.css" rel="stylesheet">
     <style>
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
@@ -26,9 +27,9 @@
     <!-- Fav and touch icons -->
   </head>
 
-  <body>
+  <body class="body">
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -36,10 +37,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Happening</a>
+          <a class="brand" href="{% url web:home %}">Happening</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li> 
+                <li class="active"><a href="{% url web:home %}">Home</a></li> 
             </ul>
             <ul class="nav pull-right">
               <li><a href="#about">About</a></li>
@@ -56,8 +57,8 @@
           {% block page-content %}
             
           {% endblock %}
-          <div class="clearfix"></div>
-      </div>
+      <div class="clearfix"></div>
+    </div>
 
     <!-- Le javascript
     ================================================== -->

@@ -13,8 +13,7 @@ v1_api.register(UserResource())
 
 urlpatterns = patterns('',
 
-    url(r'^$', 'core.views.home', name='home'),
-    #url(r'^core/', include('happening_backend.core.urls')),
+    url(r'^', include('core.urls', namespace='web')),
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
