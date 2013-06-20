@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{% block title %} Happening {% endblock %}</title>
+    <title>{% block title %} Home - Happening {% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -43,9 +43,9 @@
                 <li class="active"><a href="{% url web:home %}">Home</a></li> 
             </ul>
             <ul class="nav pull-right">
-              <li><a href="#about">About</a></li>
+                <li><a href="{% url web:about %}">About</a></li>
               <li class="divider-vertical"></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="{% url web:contact %}">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -59,13 +59,18 @@
           {% endblock %}
       <div class="clearfix"></div>
     </div>
+    <div class="modal-footer span7 offset2">
+        
+        &copy Happening  2013
 
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="{{STATIC_URL}}js/bootstrap.js"></script>
-    {% block javascript %}{% endblock %}
+    <script type="text/javascript">
+        {% block javascript %}{% endblock %}
+    </script>
 
   </body>
 </html>

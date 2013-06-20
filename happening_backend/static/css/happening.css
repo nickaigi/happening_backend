@@ -1,11 +1,17 @@
 /* bootstrap overiden classes*/
 .body{
-    //background-image: url('../img/cream_pixels.png');
+    background-image: url('../img/tweed.png');
+}
+
+.modal-footer{
+    padding: 10px;
+    text-align: center;
 }
 /*end bootstrap overiden classes*/
 
 .news_stream{
     background-image: url('../img/cream_pixels.png');
+    padding: 10px;
 }
 
 .news_item{
