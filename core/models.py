@@ -28,6 +28,11 @@ class News(models.Model):
         super(News, self).save(*args, **kwargs)
 
 
+    @property
+    def intro_text(self):
+        return '%s ...'%(self.story[:100])
+
+
 class Tag(models.Model):
     """
     Model for Tags associated with Stories

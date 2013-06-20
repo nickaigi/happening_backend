@@ -1,6 +1,27 @@
 {% extends "base.html" %}
+{% block css %}
+{% endblock%}
+{% block javascript %}
+{% endblock %}
 {% block page-content %}
-    {% for n_item in news %}
-        {{ n_item.title }}
-    {% endfor %}
+    <div class="news_stream span7 offset2">
+        {% for item in news %}
+            <div class="news_item">
+                <div class="news_title">
+                    <a href="{% url web:news_view item.id %}">{{item.title}}</a>
+                </div>
+                <div class="news_intro_text">
+                    {{item.intro_text}}
+                </div>
+                <div class="tags">
+                    {% for tag in item.tag_set.all %}
+                        <div class="pull-left news_tag">
+                            <div class="icon-tag"></div>
+                            {{tag.title}}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
 {% endblock %}
