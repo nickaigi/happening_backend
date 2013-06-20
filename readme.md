@@ -1,9 +1,7 @@
 Its Happening
 ==================
 
-Its Happening is a news delivery web app. If you want the news, think 
-'Its happening 
-'
+Its Happening is a news delivery web app. If you want the news, think `Its happening`
 
 Why is this here ?
 ------------------
